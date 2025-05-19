@@ -30,7 +30,7 @@ header {
 }
 
 header h1 {
-    color: #2c3e50;
+    color: red; /* Changed to red as per request */
     margin-bottom: 8px;
     font-weight: 700;
 }
@@ -114,6 +114,14 @@ header p {
     list-style: none;
     padding: 0;
     margin: 0 0 20px 0;
+}
+
+/* Style for the message shown when the todo list is empty */
+.empty-message {
+    text-align: center;
+    color: #7f8c8d; /* Matches other secondary text color */
+    padding: 20px 0;
+    font-style: italic;
 }
 
 .todo-item {
