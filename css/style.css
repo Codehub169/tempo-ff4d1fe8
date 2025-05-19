@@ -84,7 +84,7 @@ header p {
 
 #add-todo-btn {
     padding: 12px 20px;
-    background-color: #3498db;
+    background-image: linear-gradient(to right, #3498db, #2980b9);
     color: white;
     border: none;
     border-radius: 8px;
@@ -94,11 +94,12 @@ header p {
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: background-color 0.3s, transform 0.1s;
+    transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
 }
 
 #add-todo-btn:hover {
-    background-color: #2980b9;
+    background-image: linear-gradient(to right, #2980b9, #1f6699);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 #add-todo-btn:active {
@@ -162,7 +163,6 @@ header p {
 }
 
 .todo-item .actions button {
-    background: none;
     border: none;
     cursor: pointer;
     padding: 6px;
@@ -170,27 +170,40 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.2s;
+    transition: background 0.2s, box-shadow 0.2s;
+    color: white; 
 }
 
 .todo-item .actions button .material-icons {
     font-size: 22px;
 }
 
-.todo-item .complete-btn .material-icons {
-    color: #27ae60; /* Green for complete */
+/* Complete Button Styles */
+.todo-item .actions .complete-btn {
+    background-image: linear-gradient(to right, #2ecc71, #27ae60);
 }
 
-.todo-item .complete-btn:hover {
-    background-color: #e8f5e9;
+.todo-item .actions .complete-btn .material-icons {
+    color: white;
 }
 
-.todo-item .delete-btn .material-icons {
-    color: #c0392b; /* Red for delete */
+.todo-item .actions .complete-btn:hover {
+    background-image: linear-gradient(to right, #27ae60, #1e8449);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
 }
 
-.todo-item .delete-btn:hover {
-    background-color: #fdecea;
+/* Delete Button Styles */
+.todo-item .actions .delete-btn {
+    background-image: linear-gradient(to right, #ff6b6b, #ee5253);
+}
+
+.todo-item .actions .delete-btn .material-icons {
+    color: white;
+}
+
+.todo-item .actions .delete-btn:hover {
+    background-image: linear-gradient(to right, #ee5253, #d63031);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
 }
 
 /* Controls footer (task counter and clear all button) */
@@ -210,7 +223,7 @@ header p {
 
 #clear-all-btn {
     padding: 10px 15px;
-    background-color: #e74c3c;
+    background-image: linear-gradient(to right, #e74c3c, #c0392b);
     color: white;
     border: none;
     border-radius: 8px;
@@ -220,11 +233,12 @@ header p {
     display: flex;
     align-items: center;
     gap: 6px;
-    transition: background-color 0.3s, transform 0.1s;
+    transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
 }
 
 #clear-all-btn:hover {
-    background-color: #c0392b;
+    background-image: linear-gradient(to right, #c0392b, #a52a1a);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 #clear-all-btn:active {
