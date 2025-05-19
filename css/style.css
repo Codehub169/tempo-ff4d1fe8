@@ -11,14 +11,16 @@ body {
     min-height: 100vh;
     padding-top: 40px;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Main application container */
 .container {
     background-color: #ffffff;
     padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 16px; /* Updated */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08), 0 15px 30px rgba(0, 0, 0, 0.08); /* Updated */
     width: 100%;
     max-width: 600px;
 }
@@ -30,7 +32,7 @@ header {
 }
 
 header h1 {
-    color: red; /* Changed to red as per request */
+    color: red; /* Changed to red as per request - Kept */
     margin-bottom: 8px;
     font-weight: 700;
 }
@@ -66,7 +68,7 @@ header p {
     flex-grow: 1;
     padding: 12px 15px 12px 40px; /* Adjusted padding for icon */
     border: 1px solid #dfe6e9;
-    border-radius: 8px;
+    border-radius: 10px; /* Updated */
     font-size: 1em;
     transition: border-color 0.3s, box-shadow 0.3s;
     color: #34495e;
@@ -84,21 +86,23 @@ header p {
 
 #add-todo-btn {
     padding: 12px 20px;
-    background-image: linear-gradient(to right, #3498db, #2980b9);
+    background-color: #3498db; /* Updated */
+    background-image: none; /* Updated */
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px; /* Updated */
     cursor: pointer;
     font-size: 1em;
     font-weight: 500;
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
 }
 
 #add-todo-btn:hover {
-    background-image: linear-gradient(to right, #2980b9, #1f6699);
+    background-color: #2980b9; /* Updated */
+    background-image: none; /* Updated */
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
@@ -166,11 +170,11 @@ header p {
     border: none;
     cursor: pointer;
     padding: 6px;
-    border-radius: 50%;
+    border-radius: 50%; /* Kept for circular buttons */
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
     color: white; 
 }
 
@@ -180,7 +184,8 @@ header p {
 
 /* Complete Button Styles */
 .todo-item .actions .complete-btn {
-    background-image: linear-gradient(to right, #2ecc71, #27ae60);
+    background-color: #2ecc71; /* Updated */
+    background-image: none; /* Updated */
 }
 
 .todo-item .actions .complete-btn .material-icons {
@@ -188,13 +193,15 @@ header p {
 }
 
 .todo-item .actions .complete-btn:hover {
-    background-image: linear-gradient(to right, #27ae60, #1e8449);
+    background-color: #27ae60; /* Updated */
+    background-image: none; /* Updated */
     box-shadow: 0 1px 4px rgba(0,0,0,0.15);
 }
 
 /* Delete Button Styles */
 .todo-item .actions .delete-btn {
-    background-image: linear-gradient(to right, #ff6b6b, #ee5253);
+    background-color: #e74c3c; /* Updated */
+    background-image: none; /* Updated */
 }
 
 .todo-item .actions .delete-btn .material-icons {
@@ -202,7 +209,8 @@ header p {
 }
 
 .todo-item .actions .delete-btn:hover {
-    background-image: linear-gradient(to right, #ee5253, #d63031);
+    background-color: #c0392b; /* Updated */
+    background-image: none; /* Updated */
     box-shadow: 0 1px 4px rgba(0,0,0,0.15);
 }
 
@@ -223,21 +231,23 @@ header p {
 
 #clear-all-btn {
     padding: 10px 15px;
-    background-image: linear-gradient(to right, #e74c3c, #c0392b);
+    background-color: #e74c3c; /* Updated */
+    background-image: none; /* Updated */
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px; /* Updated */
     cursor: pointer;
     font-size: 0.9em;
     font-weight: 500;
     display: flex;
     align-items: center;
     gap: 6px;
-    transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
 }
 
 #clear-all-btn:hover {
-    background-image: linear-gradient(to right, #c0392b, #a52a1a);
+    background-color: #c0392b; /* Updated */
+    background-image: none; /* Updated */
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
